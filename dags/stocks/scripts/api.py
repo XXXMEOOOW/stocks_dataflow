@@ -5,7 +5,7 @@ import yfinance as yf
 
 def yf_download(ticker: str, start: str, end: str):
     """
-    Скачивает OHLCV-данные через yfinance.
+    Скачивает OHLC-данные через yfinance.
 
     Args:
         ticker: Тикер (AAPL, MSFT, MOEX.SBER и т.д.)
@@ -15,5 +15,6 @@ def yf_download(ticker: str, start: str, end: str):
     Returns:
         DataFrame с данными yfinance (пустой, если данных нет)
     """
-    data = yf.download(ticker, start=start, end=end)
+    # Чтобы поведение не менялось неожиданно при апдейте yfinance
+    data = yf.download(ticker, start=start, end=end, auto_adjust=False)
     return data
