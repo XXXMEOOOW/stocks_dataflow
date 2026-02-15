@@ -1,0 +1,44 @@
+[2026-02-09T10:23:58.923+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-09T10:23:58.954+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_raw_msft.download_and_load_raw scheduled__2024-10-18T00:00:00+00:00 [queued]>
+[2026-02-09T10:23:58.961+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_raw_msft.download_and_load_raw scheduled__2024-10-18T00:00:00+00:00 [queued]>
+[2026-02-09T10:23:58.962+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-09T10:23:58.977+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_and_load_raw> on 2024-10-18 00:00:00+00:00
+[2026-02-09T10:23:58.991+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=918) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-09T10:23:58.993+0000] {standard_task_runner.py:64} INFO - Started process 930 to run task
+[2026-02-09T10:23:58.991+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'stock_raw_msft', 'download_and_load_raw', 'scheduled__2024-10-18T00:00:00+00:00', '--job-id', '4276', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dwh/raw/stocks_raw_dags.py', '--cfg-path', '/tmp/tmperm8ar4l']
+[2026-02-09T10:23:58.994+0000] {standard_task_runner.py:91} INFO - Job 4276: Subtask download_and_load_raw
+[2026-02-09T10:23:59.060+0000] {task_command.py:426} INFO - Running <TaskInstance: stock_raw_msft.download_and_load_raw scheduled__2024-10-18T00:00:00+00:00 [running]> on host 4886d37bc122
+[2026-02-09T10:23:59.147+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_raw_msft' AIRFLOW_CTX_TASK_ID='download_and_load_raw' AIRFLOW_CTX_EXECUTION_DATE='2024-10-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-18T00:00:00+00:00'
+[2026-02-09T10:23:59.148+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-09T10:23:59.159+0000] {logging_mixin.py:188} INFO - [RAW] Download MSFT [1d] 2024-10-18..2024-10-19
+[2026-02-09T10:23:59.161+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks_dwh/raw/stocks_raw_dags.py:38 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-09T10:23:59.169+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-09T10:23:59.684+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-09T10:23:59.685+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py", line 86, in download_and_load_raw
+    df["volume"] = pd.to_numeric(df["volume"], errors="coerce").fillna(0).astype("int64")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/tools/numeric.py", line 212, in to_numeric
+    raise TypeError("arg must be a list, tuple, 1-d array, or Series")
+TypeError: arg must be a list, tuple, 1-d array, or Series
+[2026-02-09T10:23:59.701+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=stock_raw_msft, task_id=download_and_load_raw, run_id=scheduled__2024-10-18T00:00:00+00:00, execution_date=20241018T000000, start_date=20260209T102358, end_date=20260209T102359
+[2026-02-09T10:23:59.712+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 4276 for task download_and_load_raw (arg must be a list, tuple, 1-d array, or Series; 930)
+[2026-02-09T10:23:59.768+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-09T10:23:59.784+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-09T10:23:59.786+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,56 @@
+[2026-02-07T14:43:07.560+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-07T14:43:07.598+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_nvda.download scheduled__2025-03-13T00:00:00+00:00 [queued]>
+[2026-02-07T14:43:07.611+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_nvda.download scheduled__2025-03-13T00:00:00+00:00 [queued]>
+[2026-02-07T14:43:07.612+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-07T14:43:07.624+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download> on 2025-03-13 00:00:00+00:00
+[2026-02-07T14:43:07.638+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=8347) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-07T14:43:07.641+0000] {standard_task_runner.py:64} INFO - Started process 8352 to run task
+[2026-02-07T14:43:07.639+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'stock_nvda', 'download', 'scheduled__2025-03-13T00:00:00+00:00', '--job-id', '1791', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dags.py', '--cfg-path', '/tmp/tmp7km7bw2f']
+[2026-02-07T14:43:07.641+0000] {standard_task_runner.py:91} INFO - Job 1791: Subtask download
+[2026-02-07T14:43:07.713+0000] {task_command.py:426} INFO - Running <TaskInstance: stock_nvda.download scheduled__2025-03-13T00:00:00+00:00 [running]> on host 5adf8c44a70f
+[2026-02-07T14:43:07.812+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_nvda' AIRFLOW_CTX_TASK_ID='download' AIRFLOW_CTX_EXECUTION_DATE='2025-03-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-13T00:00:00+00:00'
+[2026-02-07T14:43:07.814+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-07T14:43:07.834+0000] {logging_mixin.py:188} INFO - Downloading NVDA from 2025-03-13 to 2025-03-14
+[2026-02-07T14:43:07.838+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks_dags.py:22 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-07T14:43:07.848+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-07T14:43:08.359+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-07T14:43:08.360+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/stocks_dags.py", line 35, in download_stock
+    df.to_parquet(output_path)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/core/frame.py", line 3135, in to_parquet
+    return to_parquet(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parquet.py", line 490, in to_parquet
+    impl.write(
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parquet.py", line 199, in write
+    path_or_handle, handles, filesystem = _get_path_or_handle(
+                                          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parquet.py", line 141, in _get_path_or_handle
+    handles = get_handle(
+              ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 793, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 652, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/opt/***/data'
+[2026-02-07T14:43:08.375+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=stock_nvda, task_id=download, run_id=scheduled__2025-03-13T00:00:00+00:00, execution_date=20250313T000000, start_date=20260207T144307, end_date=20260207T144308
+[2026-02-07T14:43:08.388+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1791 for task download (Cannot save file into a non-existent directory: '/opt/***/data'; 8352)
+[2026-02-07T14:43:08.457+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-07T14:43:08.479+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-07T14:43:08.482+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

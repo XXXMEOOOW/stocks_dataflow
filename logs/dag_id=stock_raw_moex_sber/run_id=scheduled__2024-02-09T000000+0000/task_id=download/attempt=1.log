@@ -1,0 +1,26 @@
+[2026-02-09T10:07:49.746+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-09T10:07:49.778+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_raw_moex_sber.download scheduled__2024-02-09T00:00:00+00:00 [queued]>
+[2026-02-09T10:07:49.787+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_raw_moex_sber.download scheduled__2024-02-09T00:00:00+00:00 [queued]>
+[2026-02-09T10:07:49.788+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-09T10:07:49.800+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download> on 2024-02-09 00:00:00+00:00
+[2026-02-09T10:07:49.813+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1853) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-09T10:07:49.812+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'stock_raw_moex_sber', 'download', 'scheduled__2024-02-09T00:00:00+00:00', '--job-id', '3037', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dwh/raw/stocks_raw_dags.py', '--cfg-path', '/tmp/tmp9mvt5k2m']
+[2026-02-09T10:07:49.815+0000] {standard_task_runner.py:64} INFO - Started process 1859 to run task
+[2026-02-09T10:07:49.815+0000] {standard_task_runner.py:91} INFO - Job 3037: Subtask download
+[2026-02-09T10:07:49.874+0000] {task_command.py:426} INFO - Running <TaskInstance: stock_raw_moex_sber.download scheduled__2024-02-09T00:00:00+00:00 [running]> on host b6b9e92e7d61
+[2026-02-09T10:07:49.962+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_raw_moex_sber' AIRFLOW_CTX_TASK_ID='download' AIRFLOW_CTX_EXECUTION_DATE='2024-02-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-09T00:00:00+00:00'
+[2026-02-09T10:07:49.963+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-09T10:07:49.975+0000] {logging_mixin.py:188} INFO - Downloading MOEX.SBER [1d] from 2024-02-09 to 2024-02-10
+[2026-02-09T10:07:49.977+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks_dwh/raw/stocks_raw_dags.py:25 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-09T10:07:50.997+0000] {quote.py:592} ERROR - HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: MOEX.SBER"}}}
+[2026-02-09T10:07:51.046+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/quote.py:700 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-09T10:07:51.048+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/quote.py:702 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-09T10:07:51.103+0000] {multi.py:185} ERROR - 
+1 Failed download:
+[2026-02-09T10:07:51.104+0000] {multi.py:198} ERROR - ['MOEX.SBER']: YFTzMissingError('possibly delisted; no timezone found')
+[2026-02-09T10:07:51.119+0000] {logging_mixin.py:188} INFO - No data
+[2026-02-09T10:07:51.120+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-09T10:07:51.120+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-09T10:07:51.129+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=stock_raw_moex_sber, task_id=download, run_id=scheduled__2024-02-09T00:00:00+00:00, execution_date=20240209T000000, start_date=20260209T100749, end_date=20260209T100751
+[2026-02-09T10:07:51.193+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-09T10:07:51.204+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

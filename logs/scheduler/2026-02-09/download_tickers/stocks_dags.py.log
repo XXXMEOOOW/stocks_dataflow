@@ -1,0 +1,44 @@
+[2026-02-09T09:44:48.073+0000] {processor.py:161} INFO - Started process (PID=495) to work on /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:44:48.074+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/download_tickers/stocks_dags.py for tasks to queue
+[2026-02-09T09:44:48.075+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:44:48.075+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:44:48.935+0000] {processor.py:840} INFO - DAG(s) 'stock_aapl', 'stock_nvda', 'stock_moex.sber', 'stock_tsla', 'stock_msft' retrieved from /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:44:49.061+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:44:49.061+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-09T09:44:49.080+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:44:49.080+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_aapl to 2024-01-02 00:00:00+00:00, run_after=2024-01-03 00:00:00+00:00
+[2026-02-09T09:44:49.084+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:44:49.083+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_moex.sber to 2026-02-09 00:00:00+00:00, run_after=2026-02-10 00:00:00+00:00
+[2026-02-09T09:44:49.086+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:44:49.086+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_msft to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:44:49.088+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:44:49.087+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_nvda to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:44:49.089+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:44:49.089+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_tsla to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:44:49.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/download_tickers/stocks_dags.py took 1.042 seconds
+[2026-02-09T09:45:19.216+0000] {processor.py:161} INFO - Started process (PID=513) to work on /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:45:19.217+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/download_tickers/stocks_dags.py for tasks to queue
+[2026-02-09T09:45:19.218+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:19.217+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:45:20.121+0000] {processor.py:840} INFO - DAG(s) 'stock_nvda', 'stock_moex.sber', 'stock_aapl', 'stock_msft', 'stock_tsla' retrieved from /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:45:20.153+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:20.151+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-09T09:45:20.173+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:20.172+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_aapl to 2024-01-02 00:00:00+00:00, run_after=2024-01-03 00:00:00+00:00
+[2026-02-09T09:45:20.177+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:20.177+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_moex.sber to 2026-02-09 00:00:00+00:00, run_after=2026-02-10 00:00:00+00:00
+[2026-02-09T09:45:20.180+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:20.180+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_msft to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:45:20.182+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:20.182+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_nvda to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:45:20.184+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:20.184+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_tsla to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:45:20.199+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/download_tickers/stocks_dags.py took 0.990 seconds
+[2026-02-09T09:45:50.350+0000] {processor.py:161} INFO - Started process (PID=531) to work on /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:45:50.351+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/download_tickers/stocks_dags.py for tasks to queue
+[2026-02-09T09:45:50.352+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:50.351+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:45:51.176+0000] {processor.py:840} INFO - DAG(s) 'stock_nvda', 'stock_msft', 'stock_moex.sber', 'stock_tsla', 'stock_aapl' retrieved from /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:45:51.213+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:51.213+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-09T09:45:51.236+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:51.236+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_aapl to 2024-01-02 00:00:00+00:00, run_after=2024-01-03 00:00:00+00:00
+[2026-02-09T09:45:51.243+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:51.242+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_moex.sber to 2026-02-09 00:00:00+00:00, run_after=2026-02-10 00:00:00+00:00
+[2026-02-09T09:45:51.246+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:51.246+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_msft to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:45:51.250+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:51.250+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_nvda to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:45:51.253+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:45:51.253+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_tsla to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:45:51.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/download_tickers/stocks_dags.py took 0.931 seconds
+[2026-02-09T09:46:21.499+0000] {processor.py:161} INFO - Started process (PID=550) to work on /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:46:21.500+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/download_tickers/stocks_dags.py for tasks to queue
+[2026-02-09T09:46:21.501+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:46:21.501+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:46:22.406+0000] {processor.py:840} INFO - DAG(s) 'stock_moex.sber', 'stock_tsla', 'stock_nvda', 'stock_msft', 'stock_aapl' retrieved from /opt/airflow/dags/download_tickers/stocks_dags.py
+[2026-02-09T09:46:22.440+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:46:22.440+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-09T09:46:22.461+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:46:22.461+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_aapl to 2024-01-02 00:00:00+00:00, run_after=2024-01-03 00:00:00+00:00
+[2026-02-09T09:46:22.466+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:46:22.465+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_moex.sber to 2026-02-09 00:00:00+00:00, run_after=2026-02-10 00:00:00+00:00
+[2026-02-09T09:46:22.468+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:46:22.468+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_msft to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:46:22.471+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:46:22.470+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_nvda to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:46:22.472+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:46:22.472+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_tsla to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2026-02-09T09:46:22.489+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/download_tickers/stocks_dags.py took 0.996 seconds

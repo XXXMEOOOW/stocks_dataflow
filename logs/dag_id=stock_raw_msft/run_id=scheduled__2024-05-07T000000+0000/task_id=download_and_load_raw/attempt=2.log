@@ -1,0 +1,26 @@
+[2026-02-09T12:10:18.601+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-09T12:10:18.632+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_raw_msft.download_and_load_raw scheduled__2024-05-07T00:00:00+00:00 [queued]>
+[2026-02-09T12:10:18.639+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_raw_msft.download_and_load_raw scheduled__2024-05-07T00:00:00+00:00 [queued]>
+[2026-02-09T12:10:18.640+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-02-09T12:10:18.651+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_and_load_raw> on 2024-05-07 00:00:00+00:00
+[2026-02-09T12:10:18.663+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=13387) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-09T12:10:18.664+0000] {standard_task_runner.py:64} INFO - Started process 13389 to run task
+[2026-02-09T12:10:18.663+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'stock_raw_msft', 'download_and_load_raw', 'scheduled__2024-05-07T00:00:00+00:00', '--job-id', '6753', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dwh/raw/stocks_raw_dags.py', '--cfg-path', '/tmp/tmpp25hk7fg']
+[2026-02-09T12:10:18.665+0000] {standard_task_runner.py:91} INFO - Job 6753: Subtask download_and_load_raw
+[2026-02-09T12:10:18.729+0000] {task_command.py:426} INFO - Running <TaskInstance: stock_raw_msft.download_and_load_raw scheduled__2024-05-07T00:00:00+00:00 [running]> on host 4886d37bc122
+[2026-02-09T12:10:18.835+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_raw_msft' AIRFLOW_CTX_TASK_ID='download_and_load_raw' AIRFLOW_CTX_EXECUTION_DATE='2024-05-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-07T00:00:00+00:00'
+[2026-02-09T12:10:18.836+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-09T12:10:18.847+0000] {stocks_raw_dags.py:37} INFO - 2024-05-07 00:00:00+00:00, 2024-05-08 00:00:00+00:00
+[2026-02-09T12:10:18.848+0000] {logging_mixin.py:188} INFO - [RAW] Download MSFT [1d] 2024-05-06..2024-05-08
+[2026-02-09T12:10:18.851+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks_dwh/raw/stocks_raw_dags.py:42 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-09T12:10:18.861+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-09T12:10:19.357+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-09T12:10:19.394+0000] {base.py:84} INFO - Using connection ID 'dwh_clickhouse' for task execution.
+[2026-02-09T12:10:19.416+0000] {logging_mixin.py:188} INFO - [RAW] Deleted existing rows for MSFT in 2024-05-06..2024-05-08
+[2026-02-09T12:10:19.432+0000] {logging_mixin.py:188} INFO - [RAW] Inserted 2 rows into dwh.raw_stock_prices
+[2026-02-09T12:10:19.433+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-09T12:10:19.434+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-09T12:10:19.447+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=stock_raw_msft, task_id=download_and_load_raw, run_id=scheduled__2024-05-07T00:00:00+00:00, execution_date=20240507T000000, start_date=20260209T121018, end_date=20260209T121019
+[2026-02-09T12:10:19.520+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-09T12:10:19.537+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-09T12:10:19.539+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

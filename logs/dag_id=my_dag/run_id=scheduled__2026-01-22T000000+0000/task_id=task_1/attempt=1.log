@@ -1,0 +1,59 @@
+[2026-02-06T14:12:20.343+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-06T14:12:20.391+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_dag.task_1 scheduled__2026-01-22T00:00:00+00:00 [queued]>
+[2026-02-06T14:12:20.405+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_dag.task_1 scheduled__2026-01-22T00:00:00+00:00 [queued]>
+[2026-02-06T14:12:20.406+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-06T14:12:20.447+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_1> on 2026-01-22 00:00:00+00:00
+[2026-02-06T14:12:20.459+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1028) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-06T14:12:20.459+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'my_dag', 'task_1', 'scheduled__2026-01-22T00:00:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpwil95oj9']
+[2026-02-06T14:12:20.461+0000] {standard_task_runner.py:64} INFO - Started process 1033 to run task
+[2026-02-06T14:12:20.462+0000] {standard_task_runner.py:91} INFO - Job 24: Subtask task_1
+[2026-02-06T14:12:20.559+0000] {task_command.py:426} INFO - Running <TaskInstance: my_dag.task_1 scheduled__2026-01-22T00:00:00+00:00 [running]> on host 6f0f650196f7
+[2026-02-06T14:12:20.673+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_dag' AIRFLOW_CTX_TASK_ID='task_1' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-22T00:00:00+00:00'
+[2026-02-06T14:12:20.674+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-06T14:12:20.690+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-06T14:12:20.691+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag.py", line 10, in get_data
+    data = yf.download("AAPL", start="2026-01-01", end="2026-01-31")
+           ^^
+NameError: name 'yf' is not defined
+[2026-02-06T14:12:20.708+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=my_dag, task_id=task_1, run_id=scheduled__2026-01-22T00:00:00+00:00, execution_date=20260122T000000, start_date=20260206T141220, end_date=20260206T141220
+[2026-02-06T14:12:20.726+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 24 for task task_1 (name 'yf' is not defined; 1033)
+[2026-02-06T14:12:20.756+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-06T14:12:20.771+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-02-07T14:16:39.646+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-07T14:16:39.689+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_dag.task_1 scheduled__2026-01-22T00:00:00+00:00 [queued]>
+[2026-02-07T14:16:39.701+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_dag.task_1 scheduled__2026-01-22T00:00:00+00:00 [queued]>
+[2026-02-07T14:16:39.702+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-07T14:16:39.728+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_1> on 2026-01-22 00:00:00+00:00
+[2026-02-07T14:16:39.747+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=352) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-07T14:16:39.751+0000] {standard_task_runner.py:64} INFO - Started process 383 to run task
+[2026-02-07T14:16:39.747+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'my_dag', 'task_1', 'scheduled__2026-01-22T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpk77633iy']
+[2026-02-07T14:16:39.752+0000] {standard_task_runner.py:91} INFO - Job 30: Subtask task_1
+[2026-02-07T14:16:39.862+0000] {task_command.py:426} INFO - Running <TaskInstance: my_dag.task_1 scheduled__2026-01-22T00:00:00+00:00 [running]> on host 5adf8c44a70f
+[2026-02-07T14:16:40.012+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_dag' AIRFLOW_CTX_TASK_ID='task_1' AIRFLOW_CTX_EXECUTION_DATE='2026-01-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-22T00:00:00+00:00'
+[2026-02-07T14:16:40.014+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-07T14:16:40.037+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/dag.py:11 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-07T14:16:40.048+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-07T14:16:40.560+0000] {logging_mixin.py:188} WARNING - [*********************100%***********************]  1 of 1 completed
+[2026-02-07T14:16:40.582+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-07T14:16:40.583+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-07T14:16:40.602+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=my_dag, task_id=task_1, run_id=scheduled__2026-01-22T00:00:00+00:00, execution_date=20260122T000000, start_date=20260207T141639, end_date=20260207T141640
+[2026-02-07T14:16:40.697+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-07T14:16:40.720+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-07T14:16:40.724+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,22 @@
+[2026-02-09T10:08:02.168+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-09T10:08:02.204+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_raw_aapl.download scheduled__2024-02-15T00:00:00+00:00 [queued]>
+[2026-02-09T10:08:02.216+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_raw_aapl.download scheduled__2024-02-15T00:00:00+00:00 [queued]>
+[2026-02-09T10:08:02.217+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-09T10:08:02.233+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download> on 2024-02-15 00:00:00+00:00
+[2026-02-09T10:08:02.248+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1928) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-09T10:08:02.250+0000] {standard_task_runner.py:64} INFO - Started process 1936 to run task
+[2026-02-09T10:08:02.249+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'stock_raw_aapl', 'download', 'scheduled__2024-02-15T00:00:00+00:00', '--job-id', '3054', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dwh/raw/stocks_raw_dags.py', '--cfg-path', '/tmp/tmpbt_cn7z5']
+[2026-02-09T10:08:02.252+0000] {standard_task_runner.py:91} INFO - Job 3054: Subtask download
+[2026-02-09T10:08:02.319+0000] {task_command.py:426} INFO - Running <TaskInstance: stock_raw_aapl.download scheduled__2024-02-15T00:00:00+00:00 [running]> on host b6b9e92e7d61
+[2026-02-09T10:08:02.411+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_raw_aapl' AIRFLOW_CTX_TASK_ID='download' AIRFLOW_CTX_EXECUTION_DATE='2024-02-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-15T00:00:00+00:00'
+[2026-02-09T10:08:02.412+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-09T10:08:02.427+0000] {logging_mixin.py:188} INFO - Downloading AAPL [1d] from 2024-02-15 to 2024-02-16
+[2026-02-09T10:08:02.430+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/stocks_dwh/raw/stocks_raw_dags.py:25 FutureWarning: YF.download() has changed argument auto_adjust default to True
+[2026-02-09T10:08:02.441+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/yfinance/scrapers/history.py:204 Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+[2026-02-09T10:08:02.986+0000] {logging_mixin.py:188} INFO - Saved -> /opt/***/data/aapl__2024-02-15__2024-02-16__1d.parquet
+[2026-02-09T10:08:02.987+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-09T10:08:02.987+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-09T10:08:03.000+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=stock_raw_aapl, task_id=download, run_id=scheduled__2024-02-15T00:00:00+00:00, execution_date=20240215T000000, start_date=20260209T100802, end_date=20260209T100803
+[2026-02-09T10:08:03.066+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-09T10:08:03.091+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-09T10:08:03.095+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

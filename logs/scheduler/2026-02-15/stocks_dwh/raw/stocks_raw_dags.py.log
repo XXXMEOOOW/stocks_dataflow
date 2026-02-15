@@ -1,0 +1,611 @@
+[2026-02-15T08:02:38.983+0000] {processor.py:161} INFO - Started process (PID=187) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:02:38.985+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:02:38.987+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:02:38.987+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:02:40.290+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_nvda', 'stock_raw_moex_sber', 'stock_raw_aapl', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:02:40.348+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:02:40.347+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:02:40.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.432 seconds
+[2026-02-15T08:03:10.626+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:03:10.628+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:03:10.630+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:10.630+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:03:11.485+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_tsla' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:03:11.514+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:11.513+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:03:11.534+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:11.533+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:03:11.538+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:11.538+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:03:11.539+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:11.539+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:03:11.541+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:11.541+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:03:11.543+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:11.543+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:03:11.557+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.938 seconds
+[2026-02-15T08:03:41.748+0000] {processor.py:161} INFO - Started process (PID=232) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:03:41.749+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:03:41.751+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:41.751+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:03:42.631+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_msft', 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_tsla' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:03:42.658+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:42.657+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:03:42.678+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:42.678+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:03:42.682+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:42.682+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:03:42.684+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:42.684+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:03:42.686+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:42.686+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:03:42.687+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:03:42.687+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:03:42.701+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.961 seconds
+[2026-02-15T08:04:12.901+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:04:12.902+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:04:12.904+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:12.904+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:04:13.772+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_nvda', 'stock_raw_moex_sber', 'stock_raw_aapl', 'stock_raw_msft', 'stock_raw_tsla' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:04:13.800+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:13.800+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:04:13.824+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:13.823+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:04:13.828+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:13.828+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:04:13.830+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:13.830+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:04:13.832+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:13.832+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:04:13.834+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:13.834+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:04:13.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.956 seconds
+[2026-02-15T08:04:44.105+0000] {processor.py:161} INFO - Started process (PID=256) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:04:44.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:04:44.108+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:44.108+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:04:45.074+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_msft', 'stock_raw_aapl', 'stock_raw_tsla', 'stock_raw_moex_sber', 'stock_raw_nvda' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:04:45.106+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:45.106+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:04:45.130+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:45.130+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:04:45.135+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:45.135+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:04:45.138+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:45.138+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:04:45.140+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:45.140+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:04:45.143+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:04:45.142+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:04:45.161+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.061 seconds
+[2026-02-15T08:05:15.299+0000] {processor.py:161} INFO - Started process (PID=268) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:05:15.301+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:05:15.305+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:15.304+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:05:16.379+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_tsla', 'stock_raw_nvda', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:05:16.432+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:16.431+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:05:16.465+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:16.465+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:05:16.472+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:16.472+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:05:16.475+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:16.475+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:05:16.478+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:16.478+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:05:16.481+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:16.481+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:05:16.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.216 seconds
+[2026-02-15T08:05:46.716+0000] {processor.py:161} INFO - Started process (PID=280) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:05:46.717+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:05:46.719+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:46.718+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:05:47.553+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_aapl', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:05:47.587+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:47.586+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:05:47.615+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:47.615+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:05:47.620+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:47.620+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:05:47.622+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:47.622+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:05:47.624+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:47.624+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:05:47.628+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:05:47.627+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:05:47.643+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.932 seconds
+[2026-02-15T08:06:17.832+0000] {processor.py:161} INFO - Started process (PID=292) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:06:17.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:06:17.836+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:17.836+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:06:18.786+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_aapl', 'stock_raw_msft', 'stock_raw_moex_sber', 'stock_raw_nvda' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:06:18.816+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:18.816+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:06:18.839+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:18.838+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:06:18.843+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:18.842+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:06:18.845+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:18.844+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:06:18.847+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:18.847+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:06:18.849+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:18.849+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:06:18.864+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.041 seconds
+[2026-02-15T08:06:49.028+0000] {processor.py:161} INFO - Started process (PID=304) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:06:49.029+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:06:49.031+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:49.031+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:06:49.949+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_nvda', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:06:49.982+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:49.982+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:06:50.008+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:50.007+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:06:50.013+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:50.012+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:06:50.015+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:50.015+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:06:50.017+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:50.017+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:06:50.021+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:06:50.020+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:06:50.040+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.018 seconds
+[2026-02-15T08:07:20.242+0000] {processor.py:161} INFO - Started process (PID=316) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:07:20.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:07:20.246+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:20.246+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:07:21.153+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_moex_sber', 'stock_raw_tsla' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:07:21.184+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:21.183+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:07:21.205+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:21.204+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:07:21.209+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:21.209+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:07:21.211+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:21.211+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:07:21.213+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:21.213+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:07:21.215+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:21.215+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:07:21.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.995 seconds
+[2026-02-15T08:07:51.538+0000] {processor.py:161} INFO - Started process (PID=328) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:07:51.539+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:07:51.541+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:51.541+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:07:52.446+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:07:52.475+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:52.474+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:07:52.496+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:52.496+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:07:52.500+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:52.500+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:07:52.502+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:52.502+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:07:52.504+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:52.504+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:07:52.506+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:07:52.506+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:07:52.520+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.990 seconds
+[2026-02-15T08:08:22.711+0000] {processor.py:161} INFO - Started process (PID=340) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:08:22.712+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:08:22.714+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:22.714+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:08:23.591+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_moex_sber', 'stock_raw_tsla', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:08:23.619+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:23.619+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:08:23.641+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:23.641+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:08:23.646+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:23.646+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:08:23.648+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:23.648+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:08:23.650+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:23.650+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:08:23.652+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:23.652+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:08:23.666+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.960 seconds
+[2026-02-15T08:08:53.880+0000] {processor.py:161} INFO - Started process (PID=352) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:08:53.881+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:08:53.883+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:53.882+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:08:54.699+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_moex_sber', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:08:54.732+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:54.732+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:08:54.754+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:54.753+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:08:54.757+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:54.757+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:08:54.759+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:54.759+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:08:54.761+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:54.761+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:08:54.764+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:08:54.764+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:08:54.778+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.903 seconds
+[2026-02-15T08:09:24.989+0000] {processor.py:161} INFO - Started process (PID=364) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:09:24.990+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:09:24.992+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:24.992+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:09:25.927+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_tsla', 'stock_raw_nvda', 'stock_raw_aapl', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:09:25.956+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:25.956+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:09:25.977+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:25.977+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:09:25.981+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:25.981+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:09:25.982+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:25.982+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:09:25.984+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:25.984+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:09:25.986+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:25.986+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:09:25.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.016 seconds
+[2026-02-15T08:09:56.176+0000] {processor.py:161} INFO - Started process (PID=376) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:09:56.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:09:56.178+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:56.178+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:09:57.049+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_moex_sber', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:09:57.078+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:57.077+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:09:57.099+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:57.099+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:09:57.103+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:57.102+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:09:57.105+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:57.104+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:09:57.107+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:57.106+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:09:57.109+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:09:57.108+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:09:57.123+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.954 seconds
+[2026-02-15T08:10:27.332+0000] {processor.py:161} INFO - Started process (PID=388) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:10:27.333+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:10:27.335+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:27.334+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:10:28.175+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_aapl', 'stock_raw_nvda' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:10:28.205+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:28.205+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:10:28.227+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:28.227+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:10:28.233+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:28.233+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:10:28.235+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:28.235+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:10:28.237+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:28.237+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:10:28.239+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:28.239+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:10:28.254+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.928 seconds
+[2026-02-15T08:10:58.470+0000] {processor.py:161} INFO - Started process (PID=400) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:10:58.471+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:10:58.473+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:58.473+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:10:59.395+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:10:59.431+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:59.431+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:10:59.456+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:59.456+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:10:59.460+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:59.460+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:10:59.463+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:59.463+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:10:59.466+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:59.465+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:10:59.468+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:10:59.468+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:10:59.483+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.019 seconds
+[2026-02-15T08:11:29.650+0000] {processor.py:161} INFO - Started process (PID=412) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:11:29.651+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:11:29.653+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:11:29.652+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:11:30.518+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_aapl', 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_nvda' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:11:30.547+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:11:30.547+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:11:30.567+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:11:30.567+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:11:30.571+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:11:30.571+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:11:30.573+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:11:30.573+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:11:30.575+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:11:30.575+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:11:30.577+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:11:30.577+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:11:30.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.947 seconds
+[2026-02-15T08:12:00.801+0000] {processor.py:161} INFO - Started process (PID=424) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:12:00.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:12:00.804+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:00.803+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:12:01.693+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_msft', 'stock_raw_nvda', 'stock_raw_tsla' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:12:01.722+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:01.721+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:12:01.742+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:01.742+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:12:01.746+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:01.746+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:12:01.748+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:01.747+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:12:01.749+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:01.749+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:12:01.751+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:01.751+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:12:01.764+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.968 seconds
+[2026-02-15T08:12:31.968+0000] {processor.py:161} INFO - Started process (PID=436) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:12:31.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:12:31.971+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:31.970+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:12:32.845+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_tsla', 'stock_raw_moex_sber', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:12:32.877+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:32.877+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:12:32.900+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:32.899+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:12:32.906+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:32.905+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:12:32.908+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:32.908+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:12:32.910+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:32.910+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:12:32.912+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:12:32.912+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:12:32.930+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.968 seconds
+[2026-02-15T08:13:03.259+0000] {processor.py:161} INFO - Started process (PID=448) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:13:03.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:13:03.263+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:03.262+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:13:04.140+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_aapl', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:13:04.168+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:04.168+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:13:04.190+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:04.190+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:13:04.195+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:04.194+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:13:04.197+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:04.196+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:13:04.198+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:04.198+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:13:04.200+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:04.200+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:13:04.214+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.961 seconds
+[2026-02-15T08:13:34.421+0000] {processor.py:161} INFO - Started process (PID=460) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:13:34.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:13:34.423+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:34.423+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:13:35.267+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_msft', 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:13:35.298+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:35.298+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:13:35.319+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:35.319+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:13:35.323+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:35.323+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:13:35.325+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:35.325+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:13:35.327+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:35.327+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:13:35.330+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:13:35.329+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:13:35.344+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.928 seconds
+[2026-02-15T08:14:05.566+0000] {processor.py:161} INFO - Started process (PID=472) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:14:05.567+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:14:05.569+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:05.569+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:14:06.514+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_aapl', 'stock_raw_moex_sber' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:14:06.545+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:06.544+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:14:06.567+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:06.567+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:14:06.572+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:06.571+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:14:06.574+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:06.574+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:14:06.577+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:06.576+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:14:06.580+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:06.579+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:14:06.600+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.040 seconds
+[2026-02-15T08:14:36.759+0000] {processor.py:161} INFO - Started process (PID=484) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:14:36.760+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:14:36.762+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:36.762+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:14:37.602+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_tsla', 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:14:37.630+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:37.630+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:14:37.650+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:37.650+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:14:37.656+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:37.656+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:14:37.658+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:37.658+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:14:37.659+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:37.659+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:14:37.661+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:14:37.661+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:14:37.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.922 seconds
+[2026-02-15T08:15:07.883+0000] {processor.py:161} INFO - Started process (PID=496) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:15:07.884+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:15:07.886+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:07.886+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:15:08.784+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_nvda', 'stock_raw_moex_sber', 'stock_raw_aapl', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:15:08.815+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:08.815+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:15:08.838+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:08.838+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:15:08.842+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:08.842+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:15:08.844+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:08.844+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:15:08.846+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:08.846+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:15:08.848+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:08.848+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:15:08.862+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.985 seconds
+[2026-02-15T08:15:39.074+0000] {processor.py:161} INFO - Started process (PID=508) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:15:39.075+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:15:39.077+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:39.077+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:15:39.962+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_tsla' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:15:39.991+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:39.991+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:15:40.017+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:40.016+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:15:40.021+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:40.021+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:15:40.023+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:40.023+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:15:40.024+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:40.024+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:15:40.026+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:15:40.026+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:15:40.042+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.975 seconds
+[2026-02-15T08:16:10.244+0000] {processor.py:161} INFO - Started process (PID=520) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:16:10.246+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:16:10.248+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:10.247+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:16:11.166+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_nvda', 'stock_raw_moex_sber', 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:16:11.196+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:11.196+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:16:11.218+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:11.217+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:16:11.222+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:11.222+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:16:11.224+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:11.224+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:16:11.227+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:11.226+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:16:11.229+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:11.229+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:16:11.244+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.006 seconds
+[2026-02-15T08:16:41.413+0000] {processor.py:161} INFO - Started process (PID=532) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:16:41.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:16:41.416+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:41.416+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:16:42.279+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_nvda', 'stock_raw_moex_sber' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:16:42.309+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:42.309+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:16:42.333+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:42.332+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:16:42.337+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:42.336+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:16:42.339+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:42.338+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:16:42.340+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:42.340+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:16:42.342+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:16:42.342+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:16:42.359+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.952 seconds
+[2026-02-15T08:17:12.575+0000] {processor.py:161} INFO - Started process (PID=550) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:17:12.576+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:17:12.578+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:12.578+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:17:13.411+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_msft', 'stock_raw_aapl', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_moex_sber' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:17:13.439+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:13.439+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:17:13.460+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:13.460+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:17:13.465+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:13.465+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:17:13.468+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:13.467+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:17:13.469+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:13.469+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:17:13.471+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:13.471+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:17:13.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.917 seconds
+[2026-02-15T08:17:43.893+0000] {processor.py:161} INFO - Started process (PID=562) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:17:43.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:17:43.896+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:43.896+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:17:44.728+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_msft', 'stock_raw_tsla', 'stock_raw_nvda', 'stock_raw_aapl', 'stock_raw_moex_sber' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:17:44.759+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:44.758+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:17:44.780+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:44.779+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:17:44.785+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:44.784+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:17:44.787+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:44.787+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:17:44.788+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:44.788+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:17:44.790+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:17:44.790+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:17:44.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.917 seconds
+[2026-02-15T08:18:15.019+0000] {processor.py:161} INFO - Started process (PID=574) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:18:15.020+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:18:15.022+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:15.021+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:18:15.883+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_msft', 'stock_raw_nvda', 'stock_raw_tsla' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:18:15.913+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:15.913+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:18:15.935+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:15.935+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:18:15.939+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:15.939+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:18:15.941+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:15.941+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:18:15.943+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:15.943+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:18:15.945+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:15.945+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:18:15.959+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.947 seconds
+[2026-02-15T08:18:46.169+0000] {processor.py:161} INFO - Started process (PID=586) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:18:46.170+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:18:46.171+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:46.171+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:18:46.993+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_msft', 'stock_raw_tsla', 'stock_raw_nvda', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:18:47.021+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:47.020+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:18:47.041+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:47.040+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:18:47.044+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:47.044+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:18:47.046+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:47.046+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:18:47.048+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:47.048+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:18:47.050+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:18:47.050+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:18:47.065+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.902 seconds
+[2026-02-15T08:19:17.282+0000] {processor.py:161} INFO - Started process (PID=598) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:19:17.283+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:19:17.285+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:17.285+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:19:18.132+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_moex_sber' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:19:18.160+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:18.160+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:19:18.182+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:18.182+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:19:18.186+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:18.186+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:19:18.188+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:18.188+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:19:18.190+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:18.189+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:19:18.191+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:18.191+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:19:18.205+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.928 seconds
+[2026-02-15T08:19:48.427+0000] {processor.py:161} INFO - Started process (PID=610) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:19:48.429+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:19:48.432+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:48.432+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:19:49.537+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_msft', 'stock_raw_tsla', 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:19:49.576+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:49.576+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:19:49.604+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:49.604+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:19:49.611+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:49.611+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:19:49.615+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:49.615+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:19:49.619+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:49.619+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:19:49.622+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:19:49.622+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:19:49.647+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.225 seconds
+[2026-02-15T08:20:19.857+0000] {processor.py:161} INFO - Started process (PID=622) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:20:19.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:20:19.861+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:19.860+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:20:20.713+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_moex_sber', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:20:20.744+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:20.744+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:20:20.765+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:20.765+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:20:20.770+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:20.770+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:20:20.772+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:20.772+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:20:20.775+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:20.774+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:20:20.777+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:20.777+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:20:20.795+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.944 seconds
+[2026-02-15T08:20:50.981+0000] {processor.py:161} INFO - Started process (PID=634) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:20:50.982+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:20:50.984+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:50.984+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:20:51.843+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:20:51.872+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:51.871+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:20:51.893+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:51.893+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:20:51.898+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:51.898+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:20:51.900+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:51.900+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:20:51.902+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:51.902+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:20:51.904+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:20:51.904+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:20:51.920+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.947 seconds
+[2026-02-15T08:21:22.110+0000] {processor.py:161} INFO - Started process (PID=647) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:21:22.112+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:21:22.114+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:22.114+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:21:23.003+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_msft', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_aapl', 'stock_raw_moex_sber' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:21:23.032+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:23.031+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:21:23.053+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:23.053+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:21:23.057+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:23.057+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:21:23.059+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:23.059+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:21:23.061+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:23.061+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:21:23.063+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:23.063+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:21:23.076+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.973 seconds
+[2026-02-15T08:21:53.268+0000] {processor.py:161} INFO - Started process (PID=659) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:21:53.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:21:53.271+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:53.270+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:21:54.125+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_aapl', 'stock_raw_msft', 'stock_raw_tsla', 'stock_raw_nvda' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:21:54.157+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:54.157+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:21:54.182+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:54.182+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:21:54.187+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:54.187+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:21:54.190+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:54.190+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:21:54.193+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:54.193+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:21:54.195+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:21:54.195+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:21:54.210+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.948 seconds
+[2026-02-15T08:22:24.429+0000] {processor.py:161} INFO - Started process (PID=671) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:22:24.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:22:24.433+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:24.433+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:22:25.258+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_nvda', 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:22:25.287+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:25.286+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:22:25.307+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:25.307+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:22:25.311+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:25.311+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:22:25.313+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:25.312+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:22:25.314+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:25.314+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:22:25.316+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:25.316+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:22:25.330+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.908 seconds
+[2026-02-15T08:22:55.660+0000] {processor.py:161} INFO - Started process (PID=683) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:22:55.661+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:22:55.663+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:55.663+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:22:56.506+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_aapl', 'stock_raw_msft', 'stock_raw_nvda', 'stock_raw_moex_sber' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:22:56.535+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:56.535+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:22:56.556+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:56.556+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:22:56.561+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:56.561+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:22:56.563+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:56.563+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:22:56.565+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:56.565+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:22:56.566+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:22:56.566+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:22:56.580+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.927 seconds
+[2026-02-15T08:23:26.783+0000] {processor.py:161} INFO - Started process (PID=695) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:23:26.783+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:23:26.785+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:26.785+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:23:27.601+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_msft', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_moex_sber' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:23:27.630+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:27.630+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:23:27.652+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:27.651+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:23:27.656+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:27.656+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:23:27.658+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:27.658+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:23:27.659+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:27.659+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:23:27.661+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:27.661+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:23:27.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.898 seconds
+[2026-02-15T08:23:57.883+0000] {processor.py:161} INFO - Started process (PID=707) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:23:57.884+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:23:57.885+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:57.885+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:23:58.713+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_nvda', 'stock_raw_moex_sber', 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:23:58.741+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:58.741+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:23:58.762+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:58.762+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:23:58.766+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:58.766+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:23:58.768+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:58.768+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:23:58.770+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:58.770+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:23:58.772+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:23:58.771+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:23:58.786+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.909 seconds
+[2026-02-15T08:24:29.009+0000] {processor.py:161} INFO - Started process (PID=719) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:24:29.011+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:24:29.013+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:24:29.012+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:24:29.938+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_aapl', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:24:29.988+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:24:29.987+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:24:30.027+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:24:30.027+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:24:30.035+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:24:30.034+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:24:30.040+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:24:30.040+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:24:30.045+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:24:30.044+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:24:30.050+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:24:30.049+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:24:30.075+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.073 seconds
+[2026-02-15T08:25:00.214+0000] {processor.py:161} INFO - Started process (PID=731) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:25:00.215+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:25:00.218+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:00.217+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:25:01.082+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_tsla', 'stock_raw_moex_sber', 'stock_raw_msft', 'stock_raw_nvda' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:25:01.111+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:01.110+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:25:01.132+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:01.132+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:25:01.135+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:01.135+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:25:01.138+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:01.138+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:25:01.140+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:01.140+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:25:01.142+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:01.142+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:25:01.158+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.950 seconds
+[2026-02-15T08:25:31.365+0000] {processor.py:161} INFO - Started process (PID=743) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:25:31.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:25:31.368+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:31.368+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:25:32.248+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_nvda', 'stock_raw_aapl', 'stock_raw_moex_sber' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:25:32.278+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:32.278+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:25:32.300+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:32.300+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:25:32.305+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:32.305+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:25:32.308+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:32.307+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:25:32.310+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:32.310+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:25:32.312+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:25:32.312+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:25:32.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.968 seconds
+[2026-02-15T08:26:02.535+0000] {processor.py:161} INFO - Started process (PID=755) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:26:02.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:26:02.538+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:02.537+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:26:03.410+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_aapl', 'stock_raw_msft', 'stock_raw_moex_sber', 'stock_raw_nvda' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:26:03.441+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:03.441+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:26:03.464+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:03.464+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:26:03.468+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:03.468+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:26:03.471+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:03.471+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:26:03.474+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:03.473+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:26:03.476+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:03.476+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:26:03.491+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.962 seconds
+[2026-02-15T08:26:33.707+0000] {processor.py:161} INFO - Started process (PID=767) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:26:33.708+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:26:33.709+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:33.709+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:26:34.591+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_tsla' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:26:34.626+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:34.626+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:26:34.650+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:34.650+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:26:34.655+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:34.655+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:26:34.657+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:34.657+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:26:34.660+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:34.660+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:26:34.662+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:26:34.662+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:26:34.679+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.978 seconds
+[2026-02-15T08:27:04.886+0000] {processor.py:161} INFO - Started process (PID=779) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:27:04.887+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:27:04.889+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:04.889+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:27:05.761+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_aapl', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:27:05.793+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:05.792+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:27:05.815+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:05.815+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:27:05.820+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:05.820+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:27:05.822+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:05.822+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:27:05.824+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:05.824+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:27:05.826+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:05.826+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:27:05.843+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.964 seconds
+[2026-02-15T08:27:36.062+0000] {processor.py:161} INFO - Started process (PID=791) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:27:36.063+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:27:36.065+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:36.065+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:27:36.960+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_nvda', 'stock_raw_moex_sber', 'stock_raw_tsla', 'stock_raw_aapl', 'stock_raw_msft' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:27:36.994+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:36.994+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:27:37.018+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:37.018+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:27:37.022+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:37.022+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:27:37.025+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:37.025+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:27:37.028+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:37.027+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:27:37.030+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:27:37.030+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:27:37.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.989 seconds
+[2026-02-15T08:28:07.376+0000] {processor.py:161} INFO - Started process (PID=804) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:28:07.378+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:28:07.380+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:07.379+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:28:08.249+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_msft', 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_tsla', 'stock_raw_nvda' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:28:08.279+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:08.278+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:28:08.301+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:08.301+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:28:08.306+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:08.306+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:28:08.309+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:08.309+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:28:08.312+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:08.312+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:28:08.314+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:08.313+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:28:08.332+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.962 seconds
+[2026-02-15T08:28:38.554+0000] {processor.py:161} INFO - Started process (PID=816) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:28:38.555+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:28:38.557+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:38.557+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:28:39.454+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_aapl', 'stock_raw_tsla' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:28:39.486+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:39.486+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:28:39.510+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:39.509+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:28:39.515+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:39.514+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:28:39.517+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:39.517+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:28:39.520+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:39.519+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:28:39.522+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:28:39.521+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:28:39.537+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.989 seconds
+[2026-02-15T08:29:09.740+0000] {processor.py:161} INFO - Started process (PID=828) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:29:09.741+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:29:09.744+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:09.743+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:29:10.650+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_msft', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:29:10.682+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:10.682+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:29:10.705+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:10.705+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:29:10.710+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:10.709+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:29:10.712+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:10.711+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:29:10.714+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:10.713+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:29:10.716+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:10.716+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:29:10.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.999 seconds
+[2026-02-15T08:29:40.921+0000] {processor.py:161} INFO - Started process (PID=840) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:29:40.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:29:40.924+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:40.924+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:29:41.851+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_msft', 'stock_raw_moex_sber', 'stock_raw_nvda', 'stock_raw_tsla', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:29:41.883+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:41.882+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:29:41.907+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:41.907+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:29:41.912+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:41.911+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:29:41.914+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:41.914+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:29:41.917+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:41.916+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:29:41.919+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:29:41.919+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:29:41.935+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.019 seconds
+[2026-02-15T08:30:12.109+0000] {processor.py:161} INFO - Started process (PID=852) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:30:12.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:30:12.113+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:12.112+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:30:13.031+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_msft', 'stock_raw_nvda' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:30:13.067+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:13.067+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:30:13.090+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:13.090+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:30:13.095+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:13.095+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:30:13.097+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:13.097+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:30:13.100+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:13.099+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:30:13.102+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:13.102+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:30:13.120+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 1.016 seconds
+[2026-02-15T08:30:43.293+0000] {processor.py:161} INFO - Started process (PID=864) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:30:43.294+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:30:43.295+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:43.295+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:30:44.159+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_aapl', 'stock_raw_moex_sber', 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_nvda' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:30:44.186+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:44.186+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:30:44.206+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:44.205+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:30:44.210+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:44.210+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:30:44.212+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:44.212+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:30:44.214+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:44.214+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:30:44.215+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:30:44.215+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:30:44.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.943 seconds
+[2026-02-15T08:31:14.451+0000] {processor.py:161} INFO - Started process (PID=882) to work on /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:31:14.452+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py for tasks to queue
+[2026-02-15T08:31:14.455+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:31:14.454+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:31:15.307+0000] {processor.py:840} INFO - DAG(s) 'stock_raw_tsla', 'stock_raw_msft', 'stock_raw_nvda', 'stock_raw_moex_sber', 'stock_raw_aapl' retrieved from /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py
+[2026-02-15T08:31:15.337+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:31:15.336+0000] {dag.py:3089} INFO - Sync 5 DAGs
+[2026-02-15T08:31:15.357+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:31:15.357+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_aapl to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:31:15.361+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:31:15.361+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_moex_sber to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:31:15.364+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:31:15.363+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_msft to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:31:15.366+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:31:15.366+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_nvda to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:31:15.368+0000] {logging_mixin.py:188} INFO - [2026-02-15T08:31:15.368+0000] {dag.py:3947} INFO - Setting next_dagrun for stock_raw_tsla to 2026-02-15 00:00:00+00:00, run_after=2026-02-16 00:00:00+00:00
+[2026-02-15T08:31:15.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/raw/stocks_raw_dags.py took 0.942 seconds

@@ -1,0 +1,75 @@
+[2026-02-09T09:49:48.395+0000] {processor.py:161} INFO - Started process (PID=605) to work on /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:49:48.396+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/stocks_dags.py for tasks to queue
+[2026-02-09T09:49:48.397+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:49:48.397+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:49:49.253+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:49:49.250+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stocks_dwh/stocks_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stocks_dwh/stocks_dags.py", line 43, in <module>
+    with open(CONFIG_PATH) as f:
+         ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/download_tickers/configs/tickers.yaml'
+[2026-02-09T09:49:49.255+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:49:49.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/stocks_dags.py took 0.885 seconds
+[2026-02-09T09:50:19.482+0000] {processor.py:161} INFO - Started process (PID=617) to work on /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:50:19.483+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/stocks_dags.py for tasks to queue
+[2026-02-09T09:50:19.484+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:50:19.484+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:50:20.303+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:50:20.299+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stocks_dwh/stocks_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stocks_dwh/stocks_dags.py", line 43, in <module>
+    with open(CONFIG_PATH) as f:
+         ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/download_tickers/configs/tickers.yaml'
+[2026-02-09T09:50:20.304+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:50:20.319+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/stocks_dags.py took 0.843 seconds
+[2026-02-09T09:50:50.524+0000] {processor.py:161} INFO - Started process (PID=629) to work on /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:50:50.526+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/stocks_dags.py for tasks to queue
+[2026-02-09T09:50:50.527+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:50:50.526+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:50:51.369+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:50:51.365+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stocks_dwh/stocks_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stocks_dwh/stocks_dags.py", line 43, in <module>
+    with open(CONFIG_PATH) as f:
+         ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/download_tickers/configs/tickers.yaml'
+[2026-02-09T09:50:51.370+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:50:51.390+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/stocks_dags.py took 0.873 seconds
+[2026-02-09T09:51:21.608+0000] {processor.py:161} INFO - Started process (PID=641) to work on /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:51:21.609+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/stocks_dags.py for tasks to queue
+[2026-02-09T09:51:21.610+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:51:21.610+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:51:22.453+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:51:22.450+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stocks_dwh/stocks_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stocks_dwh/stocks_dags.py", line 43, in <module>
+    with open(CONFIG_PATH) as f:
+         ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/download_tickers/configs/tickers.yaml'
+[2026-02-09T09:51:22.455+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:51:22.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/stocks_dags.py took 0.868 seconds
+[2026-02-09T09:51:52.674+0000] {processor.py:161} INFO - Started process (PID=653) to work on /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:51:52.676+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stocks_dwh/stocks_dags.py for tasks to queue
+[2026-02-09T09:51:52.677+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:51:52.676+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:51:53.534+0000] {logging_mixin.py:188} INFO - [2026-02-09T09:51:53.530+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stocks_dwh/stocks_dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stocks_dwh/stocks_dags.py", line 43, in <module>
+    with open(CONFIG_PATH) as f:
+         ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/download_tickers/configs/tickers.yaml'
+[2026-02-09T09:51:53.536+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stocks_dwh/stocks_dags.py
+[2026-02-09T09:51:53.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stocks_dwh/stocks_dags.py took 0.888 seconds
