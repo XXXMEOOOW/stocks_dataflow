@@ -70,7 +70,14 @@ services:
         condition: service_healthy
     volumes:
       - ${AIRFLOW_PROJ_DIR:-.}/dags/stocks/scripts/init_clickhouse.sql:/init.sql
-    entrypoint: ["/usr/bin/clickhouse-client", "--host", "clickhouse", "--user", "dwh_user", "--password", "dwh_pass", "--multiquery", "-f", "/init.sql"]
+    entrypoint: ["/bin/bash", "-c"]
+    command:
+      - |
+        echo "Waiting for ClickHouse native port..."
+        sleep 15
+        echo "Running init_clickhouse.sql..."
+        /usr/bin/clickhouse-client --host clickhouse --user dwh_user --password dwh_pass --multiquery -f /init.sql
+        echo "Init done."
     restart: "no"
 
   webserver:

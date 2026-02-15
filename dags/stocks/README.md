@@ -75,10 +75,14 @@ TICKERS = ["AAPL", "TSLA", "NVDA", "MSFT", "MOEX.SBER"]
 INTERVAL = "1d"
 ```
 
-## Таблица ClickHouse
+## Таблицы ClickHouse
 
-- `dwh.raw_stock_prices` — ReplacingMergeTree(ingestion_ts)
-- Колонки: ticker, trade_date, open, high, low, close, source, data_interval_start, data_interval_end, ingestion_ts
+- **raw**: `dwh.raw_stock_prices` — все тикеры
+- **ods**: `dwh.ods_stock_daily` — фильтрованные тикеры (по умолчанию AAPL)
+
+Обе: ReplacingMergeTree(ingestion_ts). Колонки: ticker, trade_date, open, high, low, close, source, data_interval_start, data_interval_end, ingestion_ts.
+
+Тикеры для ODS задаются в `config.ODS_TICKERS`.
 
 ## Запуск
 
@@ -86,6 +90,21 @@ INTERVAL = "1d"
 2. Таблица создаётся автоматически из `scripts/init_clickhouse.sql`
 3. Airflow Connection `dwh_clickhouse` создаётся в airflow-init
 4. DAG: `stock_raw_<ticker>` (например, `stock_raw_aapl`), расписание `@daily`
+
+## Если таблица не создалась при старте
+
+Перезапустить только init и посмотреть логи:
+
+```bash
+docker compose up -d clickhouse-init
+docker compose logs clickhouse-init
+```
+
+Создать таблицу вручную: выполнить SQL из `scripts/init_clickhouse.sql` в DBeaver или через:
+
+```bash
+Get-Content dags\stocks\scripts\init_clickhouse.sql | docker exec -i dwh_clickhouse clickhouse-client --user dwh_user --password dwh_pass --multiquery
+```
 
 ## Зависимости
 

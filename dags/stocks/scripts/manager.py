@@ -13,7 +13,8 @@ from stocks.scripts.api import yf_download
 logger = logging.getLogger(__name__)
 
 CONN_ID = "dwh_clickhouse"
-TABLE = "dwh.raw_stock_prices"
+TABLE_RAW = "dwh.raw_stock_prices"
+TABLE_ODS = "dwh.ods_stock_daily"
 
 INSERT_COLS = [
     "ticker",
@@ -119,5 +120,38 @@ def download_and_load(
     logger.info("Deleted existing rows for %s in %s..%s", ticker, start, end)
 
     records = df[INSERT_COLS].to_records(index=False).tolist()
-    client.insert(TABLE, records, column_names=INSERT_COLS)
-    logger.info("Inserted %d rows into %s", len(records), TABLE)
+    client.insert(TABLE_RAW, records, column_names=INSERT_COLS)
+    logger.info("Inserted %d rows into %s", len(records), TABLE_RAW)
+
+
+def load_raw_to_ods(ticker: str, start: str, end: str) -> None:
+    """
+    Копирует фильтрованные данные из raw_stock_prices в ods_stock_daily.
+
+    Args:
+        ticker: Тикер (например, AAPL)
+        start: Начало периода (YYYY-MM-DD)
+        end: Конец периода (YYYY-MM-DD)
+    """
+    client = _get_ch_client()
+
+    delete_sql = """
+    ALTER TABLE dwh.ods_stock_daily
+    DELETE WHERE ticker = %(ticker)s
+      AND trade_date >= toDate(%(start)s)
+      AND trade_date <  toDate(%(end)s)
+    """
+    client.command(delete_sql, parameters={"ticker": ticker, "start": start, "end": end})
+    logger.info("Deleted existing ODS rows for %s in %s..%s", ticker, start, end)
+
+    insert_sql = """
+    INSERT INTO dwh.ods_stock_daily
+    SELECT ticker, trade_date, open, high, low, close, source,
+           data_interval_start, data_interval_end, ingestion_ts
+    FROM dwh.raw_stock_prices
+    WHERE ticker = %(ticker)s
+      AND trade_date >= toDate(%(start)s)
+      AND trade_date <  toDate(%(end)s)
+    """
+    client.command(insert_sql, parameters={"ticker": ticker, "start": start, "end": end})
+    logger.info("Loaded %s from raw to ods_stock_daily [%s..%s]", ticker, start, end)
